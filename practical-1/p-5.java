@@ -1,27 +1,32 @@
-public class StudentInfo {
+import java.util.Scanner;
+
+class Main {
     public static void main(String[] args) {
-      
-        if (args.length < 4) {
-            System.out.println("Please provide Roll Number, Name, Course, and Semester.");
-            return;
-        }
+        Scanner input = new Scanner(System.in);  // Create Scanner object
 
- 
-        String rollNo = args[0];
-        String name = args[1];
-        String course = args[2];
-        String semester = args[3];
+        // Take user input
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
 
-        // (a) Print on a single line
-        System.out.println("Single Line:");
-        System.out.println(rollNo + " " + name + " " + course + " " + semester);
+        System.out.print("Enter your roll number: ");
+        String rollNo = input.nextLine();
 
-        // (b) Print each on a separate line
-        System.out.println("\nSeparate Lines:");
-        System.out.println("Roll Number: " + rollNo);
-        System.out.println("Name: " + name);
-        System.out.println("Course: " + course);
-        System.out.println("Semester: " + semester);
+        System.out.print("Enter your course: ");
+        String course = input.nextLine();
+
+        System.out.print("Enter your semester: ");
+        String semester = input.nextLine();
+
+        // Print user details
+        System.out.println("\n=== Student Details ===\n");
+        System.out.println("Name: " + name +"  Roll No: " +rollNo+"  Course: " + course+"  Semester: " + semester);
+        
+        
+        System.out.println("\n\nName      : " + name);
+        System.out.println("Roll No   : " + rollNo);
+        System.out.println("Course    : " + course);
+        System.out.println("Semester  : " + semester);
+
+        input.close();  // Close scanner
     }
 }
-
