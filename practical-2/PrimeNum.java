@@ -62,3 +62,69 @@ public class PrimeNum {
         input.close();
     }
 }
+
+
+// command line
+public class PrimeNumbersAllLoops {
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Please provide a number as a command-line argument.");
+            return;
+        }
+        int n = Integer.parseInt(args[0]);
+
+        // (a) Using for loop
+        System.out.println("\nPrime numbers using for loop:");
+        for (int num = 2; num <= n; num++) {
+            boolean isPrime = true;
+            for (int i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(num + " ");
+            }
+        }
+
+        // (b) Using while loop
+        System.out.println("\n\nPrime numbers using while loop:");
+        int num = 2;
+        while (num <= n) {
+            boolean isPrime = true;
+            int i = 2;
+            while (i < num) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+                i++;
+            }
+            if (isPrime) {
+                System.out.print(num + " ");
+            }
+            num++;
+        }
+
+        // (c) Using do-while loop
+        System.out.println("\n\nPrime numbers using do-while loop:");
+        num = 2;
+        do {
+            boolean isPrime = true;
+            int i = 2;
+            do {
+                if (num % i == 0 && i != num) {
+                    isPrime = false;
+                    break;
+                }
+                i++;
+            } while (i < num);
+            if (isPrime) {
+                System.out.print(num + " ");
+            }
+            num++;
+        } while (num <= n);
+    }
+}
+
