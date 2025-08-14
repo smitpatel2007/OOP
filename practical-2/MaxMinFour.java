@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MaxMinNestedIfElse {
+public class MaxMinFour {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
