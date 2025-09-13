@@ -41,3 +41,23 @@ public class pr4_6 {
     }
 }
 
+
+
+
+
+// class MaxNumber {
+
+//     int max (int a, int b) {
+//         return (a > b) ? a : b;
+//     }
+
+//     int max (int a, int b, int c) {
+//         int temp = (a > b) ? a : b;
+//         return (temp > c) ? temp : c;
+//     }
+
+//     double max (double x, double y) {
+//         return (x > y) ? x : y;
+//     }
+
+// }
