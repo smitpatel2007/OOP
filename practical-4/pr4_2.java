@@ -30,7 +30,7 @@ class BankAccount {
     }
 }
 
-public class Main { 
+public class pr4_2 { 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
