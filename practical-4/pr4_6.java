@@ -35,9 +35,9 @@ public class pr4_6 {
         MaxNumber m = new MaxNumber();
 
         // Call from max() method
-        System.out.println("Maximum of 10 and 20 = " + m.max(10, 20));
-        System.out.println("Maximum of 5, 15 and 25 = " + m.max(5, 15, 25));
-        System.out.println("Maximum of 12.5 and 9.8 = " + m.max(12.5, 9.8));
+        System.out.println("Maximum of 20 and 50 = " + m.max(20, 50));
+        System.out.println("Maximum of 10, 15 and 55 = " + m.max(10, 15, 55));
+        System.out.println("Maximum of 14.3 and 18.2 = " + m.max(14.3, 18.2));
     }
 }
 
