@@ -17,7 +17,7 @@ class Shape {
         System.out.println("Area of Rectangle: " + area);
     }
 }
-public class Main {  
+public class pr4_5 {  
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Shape s = new Shape();
