@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class BankAccount {
     int accountNumber;
     String accountHolderName;
@@ -21,24 +23,40 @@ class BankAccount {
 
     // Method to display balance
     void displayBalance() {
+        System.out.println("\n--- Account Details ---");
         System.out.println("Account Holder: " + accountHolderName);
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Balance: " + balance);
     }
 }
 
-
-public class pr4_2 {
+public class Main { 
     public static void main(String[] args) {
-        BankAccount acc = new BankAccount();
-        acc.accountNumber = 12345;
-        acc.accountHolderName = "Smit Patel";
-        acc.balance = 5000;
+        Scanner sc = new Scanner(System.in);
 
+        BankAccount acc = new BankAccount();
+
+       
+        System.out.print("Enter Account Holder Name: ");
+        acc.accountHolderName = sc.nextLine();
+
+        System.out.print("Enter Account Number: ");
+        acc.accountNumber = sc.nextInt();
+
+        System.out.print("Enter Initial Balance: ");
+        acc.balance = sc.nextDouble();
+
+        System.out.print("Enter amount to deposit: ");
+        double depositAmount = sc.nextDouble();
+        acc.deposit(depositAmount);
+
+        System.out.print("Enter amount to withdraw: ");
+        double withdrawAmount = sc.nextDouble();
+        acc.withdraw(withdrawAmount);
+
+        // Display final details
         acc.displayBalance();
-        acc.deposit(2000);
-        acc.withdraw(1500);
-        acc.displayBalance();
+
+        sc.close();
     }
 }
-
