@@ -30,7 +30,7 @@ class Person {
 public class pr4_4 {
     public static void main(String[] args) {
         Person p1 = new Person();
-        Person p2 = new Person("Smit");
+        Person p2 = new Person("Smit",19);
         Person p3 = new Person("Rahul", 22);
 
         p1.display();
