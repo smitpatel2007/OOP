@@ -1,3 +1,4 @@
+// 3.	Write a program to catch multiple exceptions such as ArrayIndexOutOfBounds Exception, NumberFormatException, NullPointerException and also use finally block.
 // Step 1: Create your own Exception class
 class InvalidAgeException extends Exception {
     InvalidAgeException(String message) {
@@ -24,3 +25,4 @@ public class pr6_4 {
         System.out.println("Program completed.");
     }
 }
+
