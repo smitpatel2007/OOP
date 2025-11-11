@@ -1,4 +1,4 @@
-
+// 3.	Write a program to catch multiple exceptions such as ArrayIndexOutOfBounds Exception, NumberFormatException, NullPointerException and also use finally block.
 public class pr6_3 {
     public static void main(String[] args) {
         try {
@@ -26,3 +26,4 @@ public class pr6_3 {
         System.out.println("Program ended successfully.");
     }
 }
+
