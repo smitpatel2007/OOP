@@ -1,3 +1,4 @@
+// 2.	Write a program to apply the nested try blocks and multiple catch blocks. 
 public class pr6_2 {
     public static void main(String[] args) {
         try {
@@ -21,3 +22,4 @@ public class pr6_2 {
         System.out.println("Program finished normally.");
     }
 }
+
